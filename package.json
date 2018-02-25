@@ -1,0 +1,41 @@
+{
+  "name": "express-react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "start": "node ./src/backEnd/index.js",
+    "watch:client": "webpack --watch",
+    "heroku-postbuild": "webpack -p --config webpack.config.js --progress",
+    "watch:server": "NODE_ENV=development nodemon -x 'npm start'",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahenazmonia/express-react-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahenazmonia/express-react-starter/issues"
+  },
+  "homepage": "https://github.com/shahenazmonia/express-react-starter#readme",
+"dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
