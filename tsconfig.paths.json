@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "@core*": ["src/_core*"],
+      "@defaultComponents*": ["src/components/_defaultComponents*"],
+      "@components*": ["src/components*"],
+      "@services*": ["src/services*"],
+      "@actions*": ["src/store/actions*"],
+      "@reducers*": ["src/store/reducers*"],
+      "@utility*": ["src/utility*"]
+    }
+  }
+}

@@ -1,41 +1,77 @@
 {
-  "name": "express-react-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "terapi-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/history": "^4.7.2",
+    "@types/jest": "23.3.12",
+    "@types/node": "10.12.18",
+    "@types/react": "16.7.18",
+    "@types/react-dom": "16.0.11",
+    "@types/react-intl": "^2.3.15",
+    "@types/react-redux": "^7.0.1",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/styled-components": "^4.1.6",
+    "@types/yup": "^0.26.7",
+    "antd": "^3.13.1",
+    "axios": "^0.18.0",
+    "draft-js": "^0.10.5",
+    "draftjs-to-html": "^0.8.4",
+    "formik": "^1.4.2",
+    "history": "^4.7.2",
+    "linkifyjs": "^2.1.8",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-draft-wysiwyg": "^1.13.1",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.0.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-intl": "^2.7.2",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "3.0.0",
+    "react-share": "^2.4.0",
+    "react-youtube": "^7.9.0",
+    "redux": "^4.0.1",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.1.3",
+    "typescript": "^3.4.5",
+    "yup": "^0.26.10"
+  },
   "scripts": {
-        "start": "node ./src/backEnd/index.js",
-    "watch:client": "webpack --watch",
-    "heroku-postbuild": "webpack -p --config webpack.config.js --progress",
-    "watch:server": "NODE_ENV=development nodemon -x 'npm start'",
-    "build": "webpack"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "docker-deploy-dev": "env NODE_ENV=development docker-compose -f docker-cloud.yml up",
+    "docker-deploy-prod": "env NODE_ENV=production docker stack deploy -c docker-cloud.yml terapi",
+    "docker-build-prod": "env NODE_ENV=production docker-compose -f docker-cloud.yml build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shahenazmonia/express-react-starter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shahenazmonia/express-react-starter/issues"
-  },
-  "homepage": "https://github.com/shahenazmonia/express-react-starter#readme",
-"dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.4.0",
-    "babel-preset-react": "^6.24.1",
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-redux": "^5.0.4",
-    "redux": "^3.6.0",
-    "webpack": "^2.4.1"
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0",
-    "nodemon": "^1.11.0"
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3",
+    "prettier": "^1.15.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

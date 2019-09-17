@@ -1,0 +1,42 @@
+{
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "no-var": "warn",
+    "prefer-const": "warn",
+    "no-extra-semi": "warn",
+    "no-set-state": "off",
+    "no-console": "off",
+    "no-compare-neg-zero": "off",
+    "no-extend-native": "off",
+    "react/no-find-dom-node": "warn",
+    "react/prop-types": "off",
+    "react/no-deprecated": "off",
+    "react/jsx-pascal-case": [
+      "error",
+      {
+        "allowAllCaps": true,
+        "ignore": []
+      }
+    ]
+  }
+}
