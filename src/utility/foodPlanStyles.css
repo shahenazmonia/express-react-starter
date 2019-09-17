@@ -1,0 +1,7 @@
+.food-row-done {
+    background-color: rgba(50,205,50,0.1);
+}
+
+.food-row-not-done {
+    background-color: rgba(220,20,60,0.1);
+}

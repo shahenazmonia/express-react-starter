@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Terapi App</title>
+    <style>
+      @font-face {
+        font-family: "Arcon";
+        src: url(%PUBLIC_URL%/Arcon-Regular.otf) format("truetype");
+      }
+      @font-face {
+        font-family: "Harabara";
+        src: url(%PUBLIC_URL%/Harabara.ttf) format("truetype");
+      }
+      body {
+        font-family: "Arcon", "Harabara" !important;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- https://github.com/jitsi/jitsi-meet/blob/master/doc/api.md-->
+    <script src="https://meet.jit.si/external_api.js"></script>
 
-<body>
-  <div id="myApp"></div>
-
-  <script type="text/javascript" src="js/bundle.js"></script>
-</body>
-
+    <div id="root"></div>
+  </body>
 </html>
